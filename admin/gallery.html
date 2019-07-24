@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="pt"> <!--<![endif]-->
+
+ <!-- BEGIN HEAD -->
+<head>
+     <meta charset="UTF-8" />
+    <title>Administrador</title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+     
+    <!-- GLOBAL STYLES -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/MoneAdmin.css" />
+    <link rel="stylesheet" href="assets/plugins/Font-Awesome/css/font-awesome.css" />
+    <!--END GLOBAL STYLES -->
+
+    <!-- PAGE LEVEL STYLES-->
+    <link href="assets/plugins/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+      <style>
+        .panel-body a img {
+            margin-bottom:5px !important;
+
+        }
+          .panel-body a{
+              color:transparent!important;
+          }
+    </style>
+    
+    <!-- serve para colocar imagem na aba superior -->
+        <link rel="shortcut icon" href="../imagem/uan" />
+              
+</head>
+
+     <!-- END HEAD -->
+
+     <!-- BEGIN BODY -->
+<body class="padTop53 ">
+
+  
+     <!-- MAIN WRAPPER -->
+    <div id="wrap">
+
+
+          <!-- sessao do topo -->
+        <div id="top">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top " style="padding-top: 10px;">
+                <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
+                    <i class="icon-align-justify"></i>
+                </a>
+                <!-- LOGO SECTION -->
+                <header class="navbar-header">
+
+                    <a href="index.php" class="navbar-brand">
+                    <img src="assets/img/logo.png" alt="" /></a>
+                </header>
+                
+                <!-- END LOGO SECTION -->
+                <ul class="nav navbar-top-links navbar-right">
+
+                   
+                    <!--TASK SECTION -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <a href="../paginaInicial.php"><span class="label label-danger">Sistema de Informação de Evento</span></a> 
+                        </a>
+
+                        
+                    </li>
+                    <!--END TASK SECTION -->
+
+                    
+                    
+                </ul>
+
+            </nav>
+
+        </div>
+  
+        <!-- MENU SECTION -->
+       <div id="left">
+            <div class="media user-media well-small">
+                <a class="user-link" href="#">
+                    <img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/user.gif" />
+                </a>
+                <br />
+                <div class="media-body">
+                    <h5 class="media-heading"> Chiuvila</h5>
+                    <ul class="list-unstyled user-info">
+                        
+                        <li>
+                             <a class="btn btn-success btn-xs btn-circle" style="width: 10px;height: 12px;"></a> Online
+                           
+                        </li>
+                       
+                    </ul>
+                </div>
+                <br />
+            </div>
+
+            <ul id="menu" class="collapse">
+
+                
+                <li class="panel">
+                    <a href="../paginaInicial.php" >
+                        <i class="icon-table"></i> Inicio
+	   
+                       
+                    </a>                   
+                </li>
+                
+                <li class="panel ">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
+                        <i class="icon-pencil"></i> Cadastar
+	   
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                          &nbsp; <span class="label label-success">2</span>&nbsp;
+                    </a>
+                    <ul class="collapse" id="form-nav">
+                         <li class=""><a href="../login.php"><i class="icon-angle-right"></i> Cadastrar </a></li>
+                         <li class=""><a href="cadastro.php"><i class="icon-angle-right"></i> Alterar Cadastro </a></li>
+                    </ul>
+                </li>
+
+
+
+                <li class="panel ">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
+                        <i class="icon-tasks"> </i> Evento  
+	   
+                        <span class="pull-right">
+                          <i class="icon-angle-left"></i>
+                        </span>
+                       &nbsp; <span class="label label-default">4</span>&nbsp;
+                    </a>
+                    <ul class="collapse" id="component-nav">                      
+                        <li class=""><a href="criarEvento.php"><i class="icon-angle-right"></i> Criar </a></li>
+                        <li class=""><a href="../.php"><i class="icon-angle-right"></i> Alterar </a></li>
+                        <li class=""><a href="Adm_consulta.php"><i class="icon-angle-right"></i> Consultar </a></li>
+                        <li class=""><a href="ADM_cmtEvento.php"><i class="icon-angle-right"></i> Comentar </a></li>
+                    </ul>
+                </li>
+                
+                <li class="panel">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#pagesr-nav">
+                        <i class="icon-table"></i> Convidado
+	   
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                          &nbsp; <span class="label label-info">2</span>&nbsp;
+                    </a>
+                    <ul class="collapse" id="pagesr-nav">
+                        <li class=""><a href="forms_general.html"><i class="icon-angle-right"></i> Inscrever </a></li>
+                        <li class=""><a href="forms_advance.html"><i class="icon-angle-right"></i> Selecionar </a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="grid.html"><i class="icon-columns"></i> Grid </a></li>
+                 <li class="panel">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#blank-nav">
+                        <i class="icon-check-empty"></i> Blank Pages
+	   
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                         &nbsp; <span class="label label-success">2</span>&nbsp;
+                    </a>
+                    <ul class="collapse" id="blank-nav">
+                       
+                        <li><a href="blank.html"><i class="icon-angle-right"></i> Blank Page One  </a></li>
+                        <li><a href="blank2.html"><i class="icon-angle-right"></i> Blank Page Two  </a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><i class="icon-signin"></i> Pagina de Login </a></li>
+
+            </ul>
+
+        </div>
+        <!--END MENU SECTION -->
+
+        <!--PAGE CONTENT -->
+        <div id="content">
+
+            <div class="inner" style="min-height:300px;">
+                <div class="row">
+                    <div class="col-lg-12">
+
+
+                        <h2> Administrador do SIE </h2>
+
+
+
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
+ 
+	
+                         <div class="panel panel-success">
+                            <div class="panel-heading">
+                               Different Animations Example
+                            </div>
+
+                            <div class="panel-body">
+                              
+			<p style="text-align:center">
+		<a  id="example1" href="assets/img/demoBig.jpg"  title="Lorem ipsum dolor sit amet"><img src="assets/img/1G.jpg" alt="" /></a>
+
+		<a  id="example2" href="assets/img/demoBig2.jpg"  title="Lorem ipsum dolor sit amet"><img src="assets/img/2G.jpg" alt="" /></a>
+
+		<a  id="example3" href="assets/img/demoBig.jpg"  title="Etiam quis mi eu elit temp"><img src="assets/img/1G.jpg" alt="" /></a>
+
+		<a  id="example4" href="assets/img/demoBig2.jpg"  title="Cras neque mi, semper leon"><img src="assets/img/2G.jpg" alt="" /></a>
+
+	</p>
+		</div>
+		</div>
+	
+		</div>
+
+                    </div>
+
+            </div>
+
+        </div>
+        
+        
+        
+        
+        
+        <!--END PAGE CONTENT -->
+
+    </div>
+
+     <!--END MAIN WRAPPER -->
+
+   <!-- FOOTER -->
+    <div id="footer">        
+        <p>&copy;  Sistema de Informacao de Evento</p>
+    </div>
+    <!--END FOOTER -->
+
+
+     <!-- GLOBAL SCRIPTS -->
+    <script src="assets/plugins/jquery-2.0.3.min.js"></script>
+     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <!-- END GLOBAL SCRIPTS -->
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="assets/plugins/jquery.fancybox-1.3.4/jquery-1.4.3.min.js"></script> <!--important for gallery-->
+     <script src="assets/plugins/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script> 
+    <script src="assets/plugins/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+     <script src="assets/js/image_gallery.js"></script>
+    
+	
+     <!--END PAGE LEVEL SCRIPTS -->
+</body>
+
+     <!-- END BODY -->
+</html>

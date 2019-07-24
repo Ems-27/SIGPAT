@@ -1,0 +1,67 @@
+
+		
+		body{
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		#nav{
+			position: absolute;
+			top: 230px;
+			bottom: 0; 
+			left: 0;
+			width: 240px; /* Width of navigation frame */
+			height: 100%;
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #1d0e0eb0;
+		}
+		
+		main{
+			position: fixed;
+			top: 0; 
+			left: 240px; /* Set this to the width of the navigation frame */
+			right: 100;
+			bottom: 0;
+			overflow: auto; 
+			background: #f3f3f3;
+		
+		}
+		
+		.innertube{
+			margin: 15px; /* Provides padding for the content */
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+				
+		/*IE6 fix*/
+		* html body{
+			padding: 0 0 0 230px; /* Set the last value to the width of the navigation frame */
+		}
+		
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+		
+		
+		
+		
+		
